@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 11, 2018 10:31:12 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="sakila.entity.Bookings" table="BOOKINGS" schema="APP" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstname" type="string">
+            <column name="FIRSTNAME" length="30" />
+        </property>
+        <property name="lastname" type="string">
+            <column name="LASTNAME" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>
